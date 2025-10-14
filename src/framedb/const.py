@@ -7,6 +7,7 @@ NUM_CHARACTERS = 38
 class CharacterName(enum.Enum):
     ALISA = "alisa"
     ANNA = "anna"
+    ARMOR_KING = "armor_king"
     ASUKA = "asuka"
     AZUCENA = "azucena"
     BRYAN = "bryan"
@@ -54,6 +55,7 @@ class CharacterName(enum.Enum):
 CHARACTER_ALIAS: Dict[CharacterName, List[str]] = {
     CharacterName.ALISA: ["ali", "als"],
     CharacterName.ANNA: ["ana", "an"],
+    CharacterName.ARMOR_KING: ["ak", "armorking"],
     CharacterName.ASUKA: ["asu", "oscar"],
     CharacterName.AZUCENA: ["azu", "cafe"],
     CharacterName.BRYAN: ["bry", "byron"],
