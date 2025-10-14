@@ -1,0 +1,6 @@
+services:
+  heihachi:
+    image: ghcr.io/tlnbs2405/heihachi:latest
+    restart: unless-stopped
+    volumes:
+      - ./config.json:/config.json
