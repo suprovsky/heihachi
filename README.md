@@ -7,7 +7,7 @@ A Discord bot to receive Tekken 8 frame data primarily from [Wavu Wiki](https://
 Clone this repository to a Linux server that has Python 3.10.0+ and install the dependencies with:
 
 ```bash
-git clone git@github.com:AbhijeetKrishnan/heihachi.git
+git clone https://github.com/TLNBS2405/heihachi
 cd heihachi
 python3 -m pip install .
 ```
@@ -18,8 +18,8 @@ The Heihachi bot is configured using a `config.json` file. A sample file is prov
 ```json
 {
     "DISCORD_TOKEN": "YOUR_DISCORD_TOKEN",
-    "FEEDBACK_CHANNEL_ID": "feedback_channel_id",
-    "ACTION_CHANNEL_ID": "action_channel_id",
+    "FEEDBACK_CHANNEL_ID": feedback_channel_id,
+    "ACTION_CHANNEL_ID": action_channel_id,
     "BLACKLIST": ["user1", "user2"],
     "ID_BLACKLIST": [0, 1]
 }
