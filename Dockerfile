@@ -3,16 +3,15 @@ FROM python:3.11 AS builder
 
 # Install our dependencies in the build container
 COPY . .
-RUN pip install . --no-cache-dir setuptools
-
-# Ensure pip, setuptools, and wheel don't piggyback into our application container
-RUN rm -r /usr/local/lib/python3.11/site-packages/pip*
+RUN pip install . --no-cache-dir setuptools && \
+  rm -r /usr/local/lib/python3.11/site-packages/pip*
 
 # Switch to distroless+nonroot for our application container
 # USER: nonroot
 # WORKDIR: /home/nonroot/
 FROM gcr.io/distroless/python3-debian12:nonroot
-
+USER nonroot
+WORKDIR /home/nonroot/
 # Copy the packages we need from our build container
 COPY --from=builder /usr/local/lib/python3.11/site-packages \
   /usr/local/lib/python3.11/site-packages
