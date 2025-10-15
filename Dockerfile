@@ -1,6 +1,6 @@
 # Use a regular distro-containing image as our build container
 FROM python:3.11 AS builder
-
+WORKDIR /
 # Install our dependencies in the build container
 COPY . .
 RUN pip install . --no-cache-dir setuptools && \
