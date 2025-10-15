@@ -1,7 +1,7 @@
 import enum
 from typing import Callable, Dict, List
 
-NUM_CHARACTERS = 38
+NUM_CHARACTERS = 39
 
 
 class CharacterName(enum.Enum):
