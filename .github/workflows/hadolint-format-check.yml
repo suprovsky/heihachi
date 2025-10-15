@@ -1,0 +1,16 @@
+name: Hadolint Dockerfile check
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+    
+jobs:
+  hadolint:
+    runs-on: "ubuntu-24.04"
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run Hadolint Dockerfile check
+        uses: hadolint/hadolint-action@v3.3.0
+        with:
+          dockerfile: Dockerfile
+          no-fail: true
