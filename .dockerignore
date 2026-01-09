@@ -1,6 +1,0 @@
-config.json
-.gitignore
-.pre-commit-config.yaml
-docker-compose.yaml
-Dockerfile
-.github
