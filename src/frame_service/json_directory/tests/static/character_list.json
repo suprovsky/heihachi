@@ -20,6 +20,11 @@
         "page": "https://wavu.wiki/t/Azucena"
     },
     {
+        "name": "bob",
+        "portrait": "https://wavu.wiki/t/Special:Redirect/file/BobT8.png",
+        "page": "https://wavu.wiki/t/Bob"
+    },
+    {
         "name": "bryan",
         "portrait": "https://wavu.wiki/t/Special:Redirect/file/BryanT8.png",
         "page": "https://wavu.wiki/t/Bryan"
@@ -93,6 +98,11 @@
         "name": "kuma",
         "portrait": "https://wavu.wiki/t/Special:Redirect/file/KumaT8.png",
         "page": "https://wavu.wiki/t/Kuma"
+    },
+    {
+        "name": "kunimitsu",
+        "portrait": "https://wavu.wiki/t/Special:Redirect/file/KunimitsuT8.png",
+        "page": "https://wavu.wiki/t/Kunimitsu"
     },
     {
         "name": "lars",

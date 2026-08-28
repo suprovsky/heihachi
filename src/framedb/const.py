@@ -1,7 +1,7 @@
 import enum
 from typing import Callable, Dict, List
 
-NUM_CHARACTERS = 40
+NUM_CHARACTERS = 42
 
 
 class CharacterName(enum.Enum):
@@ -10,6 +10,7 @@ class CharacterName(enum.Enum):
     ARMOR_KING = "armor_king"
     ASUKA = "asuka"
     AZUCENA = "azucena"
+    BOB = "bob"
     BRYAN = "bryan"
     CLAUDIO = "claudio"
     CLIVE = "clive"
@@ -26,6 +27,7 @@ class CharacterName(enum.Enum):
     KAZUYA = "kazuya"
     KING = "king"
     KUMA = "kuma"
+    KUNIMITSU = "kunimitsu"
     LARS = "lars"
     LAW = "law"
     LEE = "lee"
@@ -59,6 +61,7 @@ CHARACTER_ALIAS: Dict[CharacterName, List[str]] = {
     CharacterName.ARMOR_KING: ["ak", "armorking"],
     CharacterName.ASUKA: ["asu", "oscar"],
     CharacterName.AZUCENA: ["azu", "cafe"],
+    CharacterName.BOB: ["bobby", "bob"],
     CharacterName.BRYAN: ["bry", "byron"],
     CharacterName.CLAUDIO: ["cld", "cla", "claud"],
     CharacterName.CLIVE: ["cli", "clv"],
@@ -75,6 +78,7 @@ CHARACTER_ALIAS: Dict[CharacterName, List[str]] = {
     CharacterName.KAZUYA: ["kaz", "kazze", "masku"],
     CharacterName.KING: ["kin"],
     CharacterName.KUMA: ["karhu", "bear"],
+    CharacterName.KUNIMITSU: ["kuni", "kunimitsu"],
     CharacterName.LARS: ["lar"],
     CharacterName.LAW: ["marshall"],
     CharacterName.LEE: ["violet"],
